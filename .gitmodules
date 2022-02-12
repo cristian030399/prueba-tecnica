@@ -1,0 +1,3 @@
+[submodule "prueba-tecnica-frontend"]
+	path = prueba-tecnica-frontend
+	url = https://github.com/cristian030399/prueba-tecnica-frontend.git
