@@ -50,7 +50,7 @@ class UserController extends Controller
         $user->direction = 'direccion 1';
         $user->email = 'admin@admin.com';
         $user->password = bcrypt('admin');
-        $user->role = 'admin';
+        $user->role = 'Administrador';
         try {
             $user->save();
             return response()->json([
@@ -183,6 +183,6 @@ class UserController extends Controller
     {
         $user = JWTAuth::authenticate();
         
-        return ($user->role==='administrador');
+        return ($user->role==='Administrador');
     }
 }
